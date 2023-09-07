@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Projeto TCC (Desenvolvimento de Sistemas - Senai Nami Jafet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Monitoramento de compressor e maquinas.
 
 ## Available Scripts
 
