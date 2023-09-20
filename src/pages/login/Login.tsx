@@ -16,8 +16,8 @@ const Login = () => {
             <p>Bem vindo! Insira seu cadastro</p>
           </div>
           <div className="input-container">
-          <StyledInput/>
-            <a className="forgot-password" href="../Cadastro/Cadastro.tsx">
+          <StyledInput/>  
+            <a className="forgot-password" href="/Cadastro">
               Esqueci senha
             </a>
           </div>
@@ -26,7 +26,7 @@ const Login = () => {
           <GoogleButton
            label="Entrar com google" />
           <div className="section-sign">
-          <a className="forgot-password" href="../Cadastro/Cadastro.tsx">
+          <a className="forgot-password" href="/Cadastro">
             Ainda nao tem conta? Cadastre-se
           </a>
           </div>

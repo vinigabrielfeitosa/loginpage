@@ -11,13 +11,10 @@ const Cadastro = () => {
       <div className="login-section">
         <form className="login-form" action="/cadastro" method="post">
           <div className="aviso">
-            <h2 className="plogin">Cadasdsadsadtro</h2>
+            <h2 className="plogdin">Cadastro</h2>
             <p>Crie sua conta</p>
           </div>
           <div className="input-container">
-            <StyledInput/>
-            <StyledInput/>
-            <StyledInput/>
             <StyledInput/>
           </div>
           <StyledButton label="Cadastrar" />
@@ -25,7 +22,7 @@ const Cadastro = () => {
           <GoogleButton
            label="Entrar com google" />
           <div className="section-sign">
-            <a className="forgot-password" href="/login">
+            <a className="forgot-password" href="/Cadastro">
               Já tem conta? Faça login
             </a>
           </div>
