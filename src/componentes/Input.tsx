@@ -1,13 +1,14 @@
+import React from 'react';
 import styled from 'styled-components';
 
 interface InputProps {
   placeholder: string;
+  type?: string; // Adicionamos a propriedade "type" para definir o tipo do input (por padrão é "text")
 }
 
 const StyledInput = styled.input<InputProps>`
   width: 85%;
   margin-top: 15px;
-  /* margin-bottom: 15px; */
   background: transparent;
   padding: 15px;
   border: none;
@@ -21,13 +22,23 @@ const StyledInput = styled.input<InputProps>`
   }
 `;
 
-const App = () => {
+export const LoginPage = () => {
   return (
-    <div className="input-container">
+    <div className="login-container">
       <StyledInput placeholder="Email" />
-      <StyledInput placeholder="Senha" />
+      <StyledInput placeholder="Senha" type="password" />
     </div>
   );
 };
 
-export default App;
+export const SignupPage = () => {
+  return (
+    <div className="signup-container">
+      <StyledInput placeholder="Nome de Usuário" />
+      <StyledInput placeholder="Email" />
+      <StyledInput placeholder="Confirmar Email" />
+      <StyledInput placeholder="Senha" type="password" />
+      <StyledInput placeholder="Confirmar Senha" type="password" />
+    </div>
+  );
+};

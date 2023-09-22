@@ -2,7 +2,7 @@ import React from "react";
 import "../../App.css";
 import StyledButton from "../../componentes/Button";
 import GoogleButton from "../../componentes/Buttongoogle";
-import StyledInput from "../../componentes/Input";
+import { SignupPage } from "../../componentes/Input";
 
 const Cadastro = () => {
   return (
@@ -15,14 +15,14 @@ const Cadastro = () => {
             <p>Crie sua conta</p>
           </div>
           <div className="input-container">
-            <StyledInput/>
+            <SignupPage/>
           </div>
           <StyledButton label="Cadastrar" />
           <span className="or-separator">ou</span>
           <GoogleButton
            label="Entrar com google" />
           <div className="section-sign">
-            <a className="forgot-password" href="/Cadastro">
+            <a className="forgot-password" href="/Login">
               Já tem conta? Faça login
             </a>
           </div>
