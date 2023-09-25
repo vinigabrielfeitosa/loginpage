@@ -22,7 +22,7 @@ const Cadastro = () => {
           <GoogleButton
            label="Entrar com google" />
           <div className="section-sign">
-            <a className="forgot-password" href="/Login">
+            <a className="forgot-password" href="/">
               Já tem conta? Faça login
             </a>
           </div>
