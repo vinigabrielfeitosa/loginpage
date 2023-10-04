@@ -3,11 +3,14 @@ import "../../App.css";
 import StyledButton from "../../componentes/Button";
 import GoogleButton from "../../componentes/Buttongoogle";
 import { SignupPage } from "../../componentes/Input";
+import ParticlesComponent from '../../componentes/ParticlesComponent';
 
 const Cadastro = () => {
   return (
     <div className="login-page">
-      <div className="image-section"></div>
+      <div className="image-section">
+      <ParticlesComponent />
+      </div>
       <div className="login-section">
         <form className="login-form" action="/cadastro" method="post">
           <div className="aviso">
