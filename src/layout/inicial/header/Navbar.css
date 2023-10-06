@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.nav-btn{
+    color: white;
+}
+
+.logo{
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 5px;
+}
+
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: transparent;
+    color: var(--textColor);
+}
+
+nav a {
+    padding: 40px;
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: Ubuntu, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+nav a:hover {
+	color: var(--secondaryColor);
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
+
+.demonstracao{
+    margin: 0 0.5rem;
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remova a borda do botão */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    font-size: 1rem; /* Tamanho da fonte */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+@media only screen and (max-width: 1600px){
+    nav a{
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    header{
+        justify-content: space-between;
+    }
+
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+        color: #fff;
+	}
+
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+}
